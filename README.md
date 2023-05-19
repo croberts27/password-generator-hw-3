@@ -23,7 +23,15 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ````
 
-## Approach
+## Screenshot
+
+Here is a screenshot of the password generator functioning as expected:
+
+![screenshot](./Develop/Assets/Images/psswrd-generator.PNG)
+
+## Credits
+Columbia Coding Bootcamp
+MDN Web Docs
 
 ## Deployment
 

@@ -26,24 +26,36 @@ function generatePassword(){
     alert("Please choose a different password length");
     passwordLength = prompt("How long do you want your password to be?");
   }
-  while ()
+  for (i = [0]; i < passwordLength; i++){
   if (uppercaseConfirm){
+    i-=1
   randomChar = upperCase[Math.floor(Math.random() * upperCase.length)]
-  emptyArray.push(randomChar)
+  emptyArray.push(randomChar);
+    i+=1;
   }
   if (lowercaseConfirm){
     randomChar = lowerCase[Math.floor(Math.random() * lowerCase.length)]
     emptyArray.push(randomChar)
+    i+=1;
     }
   if (numberConfirm){
   randomChar = number[Math.floor(Math.random() * number.length)]
   emptyArray.push(randomChar)
+  i+=1;
   }
   if (symbolConfirm){
   randomChar = symbol[Math.floor(Math.random() * symbol.length)]
   emptyArray.push(randomChar)
+  i+=1;
+    }
   }
+  emptyArray.splice(passwordLength);
+  var noComma = emptyArray.join("");
+
+  return(noComma);
 }
+
+
 
 function writePassword() {
   var password = generatePassword();
